@@ -33,7 +33,7 @@ interface InternalErrorBarProps {
   offset?: number;
 }
 
-interface ErrorBarProps extends InternalErrorBarProps {
+export interface ErrorBarProps extends InternalErrorBarProps {
   dataKey: DataKey<any>;
   /** the width of the error bar ends */
   width?: number;

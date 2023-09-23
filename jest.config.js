@@ -3,7 +3,7 @@
 export default {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  roots: ['<rootDir>/test'],
+  roots: ['<rootDir>/test', '<rootDir>/src'],
   maxWorkers: '50%',
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
   collectCoverage: true,
