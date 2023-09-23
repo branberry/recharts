@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * @fileOverview Brush
  */
@@ -143,6 +144,7 @@ export class Brush extends PureComponent<Props, State> {
 
   travellerDragStartHandlers?: Record<
     BrushTravellerId,
+    // @z
     (event: React.MouseEvent<SVGGElement> | TouchEvent<SVGGElement>) => void
   >;
 
@@ -169,7 +171,6 @@ export class Brush extends PureComponent<Props, State> {
     } else {
       rectangle = Brush.renderDefaultTraveller(props);
     }
-
     return rectangle;
   }
 
