@@ -21,7 +21,7 @@ import {
   curveStepBefore,
 } from 'd3-shape';
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { LayoutType, PresentationAttributesWithProps, adaptEventHandlers } from '../util/types';
 import { filterProps } from '../util/ReactUtils';
 import { isNumber } from '../util/DataUtils';

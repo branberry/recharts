@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Sankey, Tooltip } from 'recharts';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import DemoSankeyLink from './DemoSankeyLink';
 import DemoSankeyNode from './DemoSankeyNode';
 

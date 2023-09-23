@@ -1,5 +1,5 @@
 import React, { cloneElement, ReactElement, ReactNode, SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Label, ContentType, Props as LabelProps } from './Label';
 import { Layer } from '../container/Layer';
 import { findAllByType, filterProps } from '../util/ReactUtils';

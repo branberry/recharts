@@ -2,7 +2,7 @@
  * @fileOverview Curve
  */
 import React, { SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import {
   symbol as shapeSymbol,
   symbolCircle,

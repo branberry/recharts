@@ -3,7 +3,7 @@
  */
 import React, { PureComponent, ReactNode, MouseEvent, ReactText, ReactElement } from 'react';
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { warn } from '../util/LogUtils';
 import { Surface } from '../container/Surface';
 import { Symbols } from '../shape/Symbols';

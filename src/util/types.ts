@@ -21,7 +21,7 @@ import {
   UIEvent,
   WheelEvent,
 } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { ScaleContinuousNumeric as D3ScaleContinuousNumeric } from 'd3-scale';
 
 export type StackOffsetType = 'sign' | 'expand' | 'none' | 'wiggle' | 'silhouette';

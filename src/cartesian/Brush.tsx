@@ -4,7 +4,7 @@
 import React, { PureComponent, Children, ReactText, ReactElement, TouchEvent, SVGProps } from 'react';
 import classNames from 'classnames';
 import { scalePoint, ScalePoint } from 'd3-scale';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Layer } from '../container/Layer';
 import { Text } from '../component/Text';
 import { getValueByDataKey } from '../util/ChartUtils';

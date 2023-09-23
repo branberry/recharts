@@ -2,7 +2,7 @@
  * @fileOverview Cartesian Axis
  */
 import React, { ReactElement, ReactNode, Component, SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import classNames from 'classnames';
 import { shallowEqual } from '../util/ShallowEqual';
 import { Layer } from '../container/Layer';

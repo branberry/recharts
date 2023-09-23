@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { getTicksOfScale, parseScale, checkDomainOfScale, getBandSizeOfAxis } from './ChartUtils';
 import { findChildByType } from './ReactUtils';
 import { Coordinate, AxisType, Size } from './types';

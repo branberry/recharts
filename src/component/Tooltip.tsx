@@ -3,7 +3,7 @@
  */
 import React, { PureComponent, CSSProperties, ReactNode, ReactElement, SVGProps } from 'react';
 import { translateStyle } from 'react-smooth';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import classNames from 'classnames';
 import { DefaultTooltipContent, ValueType, NameType, Payload, Props as DefaultProps } from './DefaultTooltipContent';
 

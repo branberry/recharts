@@ -14,7 +14,7 @@ import {
   LabelList,
 } from 'recharts';
 import { scaleLog } from 'd3-scale';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import CustomLineDot from './CustomLineDot';
 import { changeNumberOfData } from './utils';
 

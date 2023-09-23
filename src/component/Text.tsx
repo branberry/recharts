@@ -1,7 +1,7 @@
 import React, { CSSProperties, SVGProps, useMemo } from 'react';
 import reduceCSSCalc from 'reduce-css-calc';
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { isNumber, isNumOrStr } from '../util/DataUtils';
 import { Global } from '../util/Global';
 import { filterProps } from '../util/ReactUtils';

@@ -4,7 +4,7 @@
 import React, { PureComponent, ReactElement } from 'react';
 import Animate from 'react-smooth';
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Layer } from '../container/Layer';
 import { ImplicitLabelListType, LabelList } from '../component/LabelList';
 import { findAllByType, filterProps } from '../util/ReactUtils';

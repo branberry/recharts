@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ResponsiveContainer, FunnelChart, Funnel, Cell, Tooltip, LabelList } from 'recharts';
 import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import { changeNumberOfData } from './utils';
 
 const colors1 = scaleOrdinal(schemeCategory10).range();

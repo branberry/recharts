@@ -1,5 +1,5 @@
 import React, { cloneElement, isValidElement, ReactNode, ReactElement, createElement, SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import classNames from 'classnames';
 import { Text } from './Text';
 import { findAllByType, filterProps } from '../util/ReactUtils';
