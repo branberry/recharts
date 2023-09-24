@@ -2,7 +2,7 @@
  * @fileOverview Curve
  */
 import React, { SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import {
   symbol as shapeSymbol,
   symbolCircle,
@@ -13,7 +13,7 @@ import {
   symbolTriangle,
   symbolWye,
   SymbolType as D3SymbolType,
-} from 'victory-vendor/d3-shape';
+} from 'd3-shape';
 import classNames from 'classnames';
 import { SymbolType } from '../util/types';
 import { filterProps } from '../util/ReactUtils';

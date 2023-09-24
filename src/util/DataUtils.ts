@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash-es';
 
 export const mathSign = (value: number) => {
   if (value === 0) {

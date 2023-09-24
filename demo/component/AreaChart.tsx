@@ -1,5 +1,6 @@
+/* eslint-disable import/no-unresolved */
 import * as React from 'react';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import {
   AreaChart,
   Area,
@@ -14,7 +15,7 @@ import {
   LabelList,
   Label,
 } from 'recharts';
-import { curveCardinal } from 'victory-vendor/d3-shape';
+import { curveCardinal } from 'd3-shape';
 import { changeNumberOfData } from './utils';
 
 const data = [

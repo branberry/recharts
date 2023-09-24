@@ -1,3 +1,4 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Surface, Curve, Layer, CurveProps } from 'recharts';
 import {
@@ -7,8 +8,8 @@ import {
   curveCardinalOpen,
   curveCatmullRomOpen,
   CurveFactory,
-} from 'victory-vendor/d3-shape';
-import { scaleOrdinal } from 'victory-vendor/d3-scale';
+} from 'd3-shape';
+import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
 
 export default class Demo extends Component {

@@ -3,7 +3,7 @@
  */
 import React, { PureComponent, ReactElement, SVGProps } from 'react';
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Surface } from '../container/Surface';
 import { Layer } from '../container/Layer';
 import { Tooltip } from '../component/Tooltip';

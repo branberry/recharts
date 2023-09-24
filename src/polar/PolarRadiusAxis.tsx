@@ -2,7 +2,7 @@
  * @fileOverview The axis of polar coordinate system
  */
 import React, { PureComponent } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Text } from '../component/Text';
 import { Label } from '../component/Label';
 import { Layer } from '../container/Layer';

@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash-es';
 import React, { ComponentProps, isValidElement, cloneElement } from 'react';
 import { Bar, BarProps } from '../cartesian/Bar';
 import { Layer } from '../container/Layer';

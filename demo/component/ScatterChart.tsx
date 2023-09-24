@@ -14,7 +14,7 @@ import {
   ErrorBar,
   LabelList,
 } from 'recharts';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import { changeNumberOfData } from './utils';
 
 const data01 = [

@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
     "jsx": "react",
-    "module": "commonjs",
     "noImplicitAny": true,
     "outDir": "./build/",
     "declarationDir": "./types" /* Output directory for generated declaration files. */,
@@ -11,7 +12,7 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "declaration": true /* Generates corresponding '.d.ts' file. */,
-    "target": "es5",
+    "target": "ES6",
     "allowSyntheticDefaultImports": true,
     "baseUrl": "."
   },

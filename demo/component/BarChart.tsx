@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/no-multi-comp */
-/* eslint-disable max-classes-per-file */
 import React, { Component } from 'react';
 import {
   BarChart,
@@ -18,9 +17,9 @@ import {
   LabelList,
   Rectangle,
 } from 'recharts';
-import { scaleOrdinal } from 'victory-vendor/d3-scale';
+import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { changeNumberOfData } from './utils';
 
 const colors = scaleOrdinal(schemeCategory10).range();

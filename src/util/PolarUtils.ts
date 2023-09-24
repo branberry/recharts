@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { getPercentValue } from './DataUtils';
 import { parseScale, checkDomainOfScale, getTicksOfScale } from './ChartUtils';
 import { Coordinate, ChartOffset, GeometrySector } from './types';

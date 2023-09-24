@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * @fileOverview Brush
  */
 import React, { PureComponent, Children, ReactText, ReactElement, TouchEvent, SVGProps } from 'react';
 import classNames from 'classnames';
-import { scalePoint, ScalePoint } from 'victory-vendor/d3-scale';
-import _ from 'lodash';
+import { scalePoint, ScalePoint } from 'd3-scale';
+import _ from 'lodash-es';
 import { Layer } from '../container/Layer';
 import { Text } from '../component/Text';
 import { getValueByDataKey } from '../util/ChartUtils';
@@ -143,6 +144,7 @@ export class Brush extends PureComponent<Props, State> {
 
   travellerDragStartHandlers?: Record<
     BrushTravellerId,
+    // @z
     (event: React.MouseEvent<SVGGElement> | TouchEvent<SVGGElement>) => void
   >;
 
@@ -169,7 +171,6 @@ export class Brush extends PureComponent<Props, State> {
     } else {
       rectangle = Brush.renderDefaultTraveller(props);
     }
-
     return rectangle;
   }
 

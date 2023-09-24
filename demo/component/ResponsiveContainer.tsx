@@ -25,7 +25,7 @@ import {
   RadialBar,
   Treemap,
 } from 'recharts';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import { changeNumberOfData } from './utils';
 
 const data = [

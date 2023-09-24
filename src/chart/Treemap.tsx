@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import _ from 'lodash';
+import _ from 'lodash-es';
 /**
  * @fileOverview TreemapChart
  */

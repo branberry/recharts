@@ -2,7 +2,7 @@
  * @fileOverview Cartesian Grid
  */
 import React, { PureComponent, ReactElement, SVGProps } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { isNumber } from '../util/DataUtils';
 import { ChartOffset, D3Scale } from '../util/types';
 

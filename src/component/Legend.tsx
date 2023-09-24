@@ -2,7 +2,7 @@
  * @fileOverview Legend
  */
 import React, { PureComponent, CSSProperties } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { DefaultLegendContent, Payload, Props as DefaultProps, ContentType } from './DefaultLegendContent';
 
 import { isNumber } from '../util/DataUtils';

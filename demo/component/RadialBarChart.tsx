@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as _ from 'lodash';
+import * as _ from 'lodash-es';
 import {
   RadialBarChart,
   RadialBar,
@@ -10,7 +10,7 @@ import {
   LabelList,
   PolarAngleAxis,
 } from 'recharts';
-import { scaleOrdinal } from 'victory-vendor/d3-scale';
+import { scaleOrdinal } from 'd3-scale';
 import { schemeCategory10 } from 'd3-scale-chromatic';
 import { changeNumberOfData } from './utils';
 

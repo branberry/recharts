@@ -4,7 +4,7 @@
 import React, { PureComponent, ReactElement, ReactNode } from 'react';
 import classNames from 'classnames';
 import Animate from 'react-smooth';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Sector, Props as SectorProps } from '../shape/Sector';
 import { Layer } from '../container/Layer';
 import { findAllByType, filterProps } from '../util/ReactUtils';

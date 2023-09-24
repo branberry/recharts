@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Treemap, Tooltip } from 'recharts';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import DemoTreemapItem from './DemoTreemapItem';
 import { changeNumberOfData as changeData } from './utils';
 

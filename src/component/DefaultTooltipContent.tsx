@@ -1,7 +1,7 @@
 /**
  * @fileOverview Default Tooltip Content
  */
-import _ from 'lodash';
+import _ from 'lodash-es';
 import React, { CSSProperties, ReactNode } from 'react';
 import classNames from 'classnames';
 import { isNumOrStr } from '../util/DataUtils';

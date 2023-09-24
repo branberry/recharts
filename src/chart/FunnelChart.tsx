@@ -1,6 +1,7 @@
 /**
  * @fileOverview Funnel Chart
  */
+import React from 'react';
 import { generateCategoricalChart } from './generateCategoricalChart';
 import { Funnel } from '../numberAxis/Funnel';
 
@@ -13,4 +14,4 @@ export const FunnelChart = generateCategoricalChart({
   defaultProps: {
     layout: 'centric',
   },
-});
+}) as unknown as React.FC<any>;

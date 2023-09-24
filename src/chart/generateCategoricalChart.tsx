@@ -1,6 +1,6 @@
 import React, { Component, cloneElement, isValidElement, createElement, ComponentProps, ReactElement } from 'react';
 import classNames from 'classnames';
-import _, { isArray, isBoolean, isNil } from 'lodash';
+import _, { isArray, isBoolean, isNil } from 'lodash-es';
 import invariant from 'tiny-invariant';
 import { getTicks } from '../cartesian/getTicks';
 import { Surface } from '../container/Surface';

@@ -2,7 +2,7 @@
  * @fileOverview Axis of radial direction
  */
 import React, { PureComponent } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Layer } from '../container/Layer';
 import { Dot } from '../shape/Dot';
 import { Polygon } from '../shape/Polygon';

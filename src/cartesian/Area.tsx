@@ -4,7 +4,7 @@
 import React, { PureComponent, ReactElement, SVGProps } from 'react';
 import classNames from 'classnames';
 import Animate from 'react-smooth';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import { Curve, CurveType, Point as CurvePoint } from '../shape/Curve';
 import { Dot, Props as DotProps } from '../shape/Dot';
 import { Layer } from '../container/Layer';

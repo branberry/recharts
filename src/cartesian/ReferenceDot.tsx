@@ -2,7 +2,7 @@
  * @fileOverview Reference Dot
  */
 import React, { ReactElement } from 'react';
-import _ from 'lodash';
+import _ from 'lodash-es';
 import classNames from 'classnames';
 import { Layer } from '../container/Layer';
 import { Dot, Props as DotProps } from '../shape/Dot';

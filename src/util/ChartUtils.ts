@@ -1,4 +1,3 @@
-import * as d3Scales from 'victory-vendor/d3-scale';
 import {
   stack as shapeStack,
   stackOffsetExpand,
@@ -6,8 +5,10 @@ import {
   stackOffsetSilhouette,
   stackOffsetWiggle,
   stackOrderNone,
-} from 'victory-vendor/d3-shape';
-import _ from 'lodash';
+} from 'd3-shape';
+import { scaleBand, scaleLinear, scalePoint } from 'd3-scale';
+
+import _ from 'lodash-es';
 import { ReactElement, ReactNode } from 'react';
 import { getNiceTickValues, getTickValuesFixedDomain } from 'recharts-scale';
 
@@ -688,10 +689,10 @@ export const parseScale = (axis: any, chartType?: string, hasBar?: boolean) => {
   const { scale, type, layout, axisType } = axis;
   if (scale === 'auto') {
     if (layout === 'radial' && axisType === 'radiusAxis') {
-      return { scale: d3Scales.scaleBand(), realScaleType: 'band' };
+      return { scale: scaleBand(), realScaleType: 'band' };
     }
     if (layout === 'radial' && axisType === 'angleAxis') {
-      return { scale: d3Scales.scaleLinear(), realScaleType: 'linear' };
+      return { scale: scaleLinear(), realScaleType: 'linear' };
     }
 
     if (
@@ -701,24 +702,24 @@ export const parseScale = (axis: any, chartType?: string, hasBar?: boolean) => {
         chartType.indexOf('AreaChart') >= 0 ||
         (chartType.indexOf('ComposedChart') >= 0 && !hasBar))
     ) {
-      return { scale: d3Scales.scalePoint(), realScaleType: 'point' };
+      return { scale: scalePoint(), realScaleType: 'point' };
     }
     if (type === 'category') {
-      return { scale: d3Scales.scaleBand(), realScaleType: 'band' };
+      return { scale: scaleBand(), realScaleType: 'band' };
     }
 
-    return { scale: d3Scales.scaleLinear(), realScaleType: 'linear' };
+    return { scale: scaleLinear(), realScaleType: 'linear' };
   }
   if (_.isString(scale)) {
     const name = `scale${_.upperFirst(scale)}`;
 
     return {
-      scale: ((d3Scales as Record<string, any>)[name] || d3Scales.scalePoint)(),
-      realScaleType: (d3Scales as Record<string, any>)[name] ? name : 'point',
+      scale: (({} as Record<string, any>)[name] || scalePoint)(),
+      realScaleType: ({} as Record<string, any>)[name] ? name : 'point',
     };
   }
 
-  return _.isFunction(scale) ? { scale } : { scale: d3Scales.scalePoint(), realScaleType: 'point' };
+  return _.isFunction(scale) ? { scale } : { scale: scalePoint(), realScaleType: 'point' };
 };
 const EPS = 1e-4;
 export const checkDomainOfScale = (scale: any) => {

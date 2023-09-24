@@ -221,8 +221,10 @@ describe('<YAxis />', () => {
     const barsSecondHidden = wrapperSecondHidden.container.querySelectorAll('recharts-bar-rectangle > path');
 
     // spreading into single array to match indices, as barsBothShowing will get Rectangles from the first Bar, then the second
-    expect([...Array.from(barsSecondHidden), ...Array.from(barsFirstHidden)].every((bar, i) => {
-      return bar.getAttribute('height') === barsBothShowing[i].getAttribute('height')
-    })).toBe(true);
+    expect(
+      [...Array.from(barsSecondHidden), ...Array.from(barsFirstHidden)].every((bar, i) => {
+        return bar.getAttribute('height') === barsBothShowing[i].getAttribute('height');
+      }),
+    ).toBe(true);
   });
 });
