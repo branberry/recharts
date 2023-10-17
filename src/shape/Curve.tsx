@@ -19,7 +19,7 @@ import {
   curveStep,
   curveStepAfter,
   curveStepBefore,
-} from 'victory-vendor/d3-shape';
+} from 'd3-shape';
 import classNames from 'classnames';
 import _ from 'lodash';
 import { LayoutType, PresentationAttributesWithProps, adaptEventHandlers } from '../util/types';
@@ -110,7 +110,7 @@ const getPath = ({ type = 'linear', points = [], baseLine, layout, connectNulls 
   const formatPoints = connectNulls ? points.filter(entry => defined(entry)) : points;
   let lineFunction;
 
-  if (_.isArray(baseLine)) {
+  if (Array.isArray(baseLine)) {
     const formatBaseLine = connectNulls ? baseLine.filter(base => defined(base)) : baseLine;
     const areaPoints = formatPoints.map((entry, index) => ({ ...entry, base: formatBaseLine[index] }));
     if (layout === 'vertical') {

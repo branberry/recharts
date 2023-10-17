@@ -16,8 +16,7 @@ export const mockMouseEvent = (
   element: Window | Document | Node | Element,
   eventInit: MouseEventWithOffsets,
 ) => {
-  const mouseEvent = new MouseEvent(eventName, { bubbles: true, cancelable: true });
-  Object.assign(mouseEvent, eventInit);
+  const mouseEvent = new MouseEvent(eventName, { bubbles: true, cancelable: true, ...eventInit });
 
   return {
     fire: () => fireEvent(element, mouseEvent),

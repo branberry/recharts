@@ -13,7 +13,7 @@ import {
   Label,
   LabelList,
 } from 'recharts';
-import { scaleLog } from 'victory-vendor/d3-scale';
+import { scaleLog } from 'd3-scale';
 import * as _ from 'lodash';
 import CustomLineDot from './CustomLineDot';
 import { changeNumberOfData } from './utils';

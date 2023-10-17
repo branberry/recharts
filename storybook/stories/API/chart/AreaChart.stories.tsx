@@ -1,5 +1,5 @@
 import React from 'react';
-import { curveCardinal } from 'victory-vendor/d3-shape';
+import { curveCardinal } from 'd3-shape';
 import { Args } from '@storybook/react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis } from '../../../../src';
 import { pageData, subjectData } from '../../data';

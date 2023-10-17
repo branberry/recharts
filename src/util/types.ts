@@ -22,7 +22,7 @@ import {
   WheelEvent,
 } from 'react';
 import _ from 'lodash';
-import { ScaleContinuousNumeric as D3ScaleContinuousNumeric } from 'victory-vendor/d3-scale';
+import { ScaleContinuousNumeric as D3ScaleContinuousNumeric } from 'd3-scale';
 
 /**
  * Determines how values are stacked:
